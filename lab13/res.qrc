@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>pistolcat1.jpg</file>
+        <file>pistolcat2.jpg</file>
+    </qresource>
+</RCC>
