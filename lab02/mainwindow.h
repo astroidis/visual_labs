@@ -17,18 +17,14 @@ public:
 
 private slots:
     void on_btn1_clicked();
-
     void on_btn2_clicked();
-
     void on_btn3_clicked();
-
     void on_btn4_clicked();
-
     void on_msgBtn_clicked();
-
     void on_enableBtn_clicked();
-
     void on_disableBtn_clicked();
+    void on_buttonGroup_clicked(int);
+    void on_checkGroup_clicked();
 
 private:
     Ui::MainWindow *ui;
