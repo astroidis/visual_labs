@@ -11,9 +11,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connect(ui->buttonGroup, SIGNAL(buttonClicked(int)), this, SLOT(on_buttonGroup_clicked(int)));
+    QObject::connect(ui->buttonGroup, SIGNAL(buttonClicked(int)), this, SLOT(on_buttonGroup_clicked(int)));
     ui->checkGroup->setExclusive(false);
-    connect(ui->checkGroup, SIGNAL(buttonToggled(QAbstractButton *, bool)),
+    QObject::connect(ui->checkGroup, SIGNAL(buttonToggled(QAbstractButton *, bool)),
             this, SLOT(on_checkGroup_clicked()));
 }
 

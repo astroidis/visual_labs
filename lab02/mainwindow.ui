@@ -20,36 +20,30 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QMdiArea" name="mdiArea">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>0</y>
-      <width>600</width>
+      <width>601</width>
       <height>400</height>
      </rect>
     </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
-    <widget class="QWidget" name="subwindow">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
+    <widget class="QWidget" name="tab1">
+     <property name="accessibleName">
+      <string/>
      </property>
-     <property name="windowTitle">
-      <string>Subwindow</string>
-     </property>
+     <attribute name="title">
+      <string>Page 1</string>
+     </attribute>
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>50</y>
+        <y>30</y>
         <width>571</width>
         <height>181</height>
        </rect>
@@ -112,7 +106,7 @@
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>280</y>
+        <y>260</y>
         <width>151</width>
         <height>41</height>
        </rect>
@@ -127,15 +121,15 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="subwindow_2">
-     <property name="windowTitle">
-      <string>Subwindow</string>
-     </property>
+    <widget class="QWidget" name="tab2">
+     <attribute name="title">
+      <string>Page 2</string>
+     </attribute>
      <widget class="QPushButton" name="msgBtn">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>200</y>
+        <x>120</x>
+        <y>190</y>
         <width>145</width>
         <height>34</height>
        </rect>
@@ -149,47 +143,11 @@
        <string>Show Message</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="enableBtn">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>170</y>
-        <width>114</width>
-        <height>34</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>16</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Enable</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="disableBtn">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>240</y>
-        <width>114</width>
-        <height>34</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>16</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Disable</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>50</y>
+        <x>130</x>
+        <y>40</y>
         <width>341</width>
         <height>26</height>
        </rect>
@@ -206,16 +164,52 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QPushButton" name="disableBtn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>230</y>
+        <width>114</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Disable</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="enableBtn">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>160</y>
+        <width>114</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Enable</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="subwindow_3">
-     <property name="windowTitle">
-      <string>Subwindow</string>
-     </property>
+    <widget class="QWidget" name="tab3">
+     <attribute name="title">
+      <string>Page 3</string>
+     </attribute>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>50</y>
+        <x>140</x>
+        <y>40</y>
         <width>311</width>
         <height>61</height>
        </rect>
@@ -235,8 +229,8 @@
      <widget class="QWidget" name="horizontalLayoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>200</y>
+        <x>40</x>
+        <y>190</y>
         <width>531</width>
         <height>81</height>
        </rect>
@@ -305,14 +299,35 @@
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="subwindow_4">
-     <property name="windowTitle">
-      <string>Subwindow</string>
-     </property>
+    <widget class="QWidget" name="tab4">
+     <attribute name="title">
+      <string>Page 4</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Active channels:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
      <widget class="QWidget" name="horizontalLayoutWidget_3">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>20</x>
         <y>190</y>
         <width>561</width>
         <height>80</height>
@@ -380,27 +395,6 @@
         </widget>
        </item>
       </layout>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>40</y>
-        <width>301</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Active channels:</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
      </widget>
     </widget>
    </widget>
