@@ -1,1 +1,1 @@
-labs of visual programming course written in c++ and qt
+labs of visual programming course written in delphi
