@@ -36,6 +36,7 @@ object Form1: TForm1
     Top = 63
     Width = 569
     Height = 338
+    Legend.Alignment = laTop
     Title.Text.Strings = (
       'TChart')
     View3D = False
@@ -43,6 +44,7 @@ object Form1: TForm1
     DefaultCanvas = 'TGDIPlusCanvas'
     ColorPaletteIndex = 13
     object Series1: TLineSeries
+      Title = '2.5 * (1 + 0.08)^X'
       Brush.BackColor = clDefault
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -52,6 +54,7 @@ object Form1: TForm1
       YValues.Order = loNone
     end
     object Series2: TLineSeries
+      Title = '5.7 * (1 + 0.095)^X'
       Brush.BackColor = clDefault
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -61,6 +64,7 @@ object Form1: TForm1
       YValues.Order = loNone
     end
     object Series3: TLineSeries
+      Title = '5.7 * (1 + 0.095)^X + 5.45'
       Brush.BackColor = clDefault
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
