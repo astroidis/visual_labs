@@ -1,2 +1,2 @@
-build*
-lab*/lab*.pro.user
+lab*/Win*
+lab*/__*
